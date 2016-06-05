@@ -16,11 +16,8 @@ public class FindPivotInRotatedSortedArray {
 				// pivot must be to the left of m
 				r = m;
 			}
-			if (l==r) {
-				return l;
-			}
 		}
-		return -1;
+		return l;
 	}
 		
 	public static void main(String[] args) {

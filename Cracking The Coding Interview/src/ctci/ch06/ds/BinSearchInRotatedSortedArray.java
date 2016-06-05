@@ -12,10 +12,8 @@ public class BinSearchInRotatedSortedArray {
 				l = m + 1;
 			else // pivot must be to the left of m
 				r = m;
-			if (l == r)
-				return l;
 		}
-		return -1;
+		return l;
 	}
 
 	public int findIndex(int[] array, int n) {
@@ -37,8 +35,9 @@ public class BinSearchInRotatedSortedArray {
 			}
 		}
 
+		int m = l;
 		while (l < r) {
-			int m = l + (r - l) / 2;
+			m = l + (r - l) / 2;
 			if (array[m] == n)
 				return m;
 			if (array[m] < n)
@@ -48,7 +47,7 @@ public class BinSearchInRotatedSortedArray {
 			if (l == r)
 				return m;
 		}
-		return -1;
+		return m;
 	}
 
 	public static void main(String[] args) {
