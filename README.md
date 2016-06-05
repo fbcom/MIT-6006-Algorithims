@@ -26,3 +26,8 @@ I sometimes implement an interesting algorithm and explain it on my blog.
 ### Programming Interviews Exposed:
 
 This is a book which you can get in different flavors (i.e. Java Programming Interviews Exposed).
+
+### Cracking The Coding Interview:
+
+This is another (excellent) book with many tips and challenges for preparing for coding interviews.
+
