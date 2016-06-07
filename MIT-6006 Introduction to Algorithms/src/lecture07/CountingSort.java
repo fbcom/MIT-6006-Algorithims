@@ -16,10 +16,10 @@ public class CountingSort<T extends HasIntKey> {
 
 		int k = array[0].getKey();
 		for (T e : array) {
-			int i = e.getKey();
-			if (i < 0)
+			int key = e.getKey();
+			if (key < 0)
 				throw new IllegalArgumentException("Unexpected negative number in array");
-			k = i > k ? i : k;
+			k = key > k ? key : k;
 		}
 		k++;
 
